@@ -1,0 +1,1 @@
+print(str(input()).replace("apa","a").replace("opo","o").replace("upu","u").replace("epe","a").replace("ipi","i"))
