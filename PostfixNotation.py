@@ -15,4 +15,4 @@ while len(ls) >= 2:
             break
     ls.pop(i-1)
     ls.pop(i-2) 
-print(ls[0])
+print(f"{ls[0]:.2f}")
