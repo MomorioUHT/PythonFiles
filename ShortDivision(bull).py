@@ -4,9 +4,9 @@ divisor = str(input())
 allLen = len(divisor) + len(initial) + 3
 frontlen = len(divisor)
 backlen = allLen - frontlen
-spaces_needed = backlen - len(str(result)) - 1
 
 result = int(initial)//int(divisor)
+spaces_needed = backlen - len(str(result)) - 1
 
 print(f"{divisor} | {initial}")
 print(" "*frontlen,"-"*backlen)
