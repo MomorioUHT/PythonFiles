@@ -28,15 +28,15 @@ def long_division(initial, divisor, frontlen):
             if count == 0: 
                 if (len(str(remainder + product)) > len(str(product))): 
                     front_space += (len(str(remainder + product)) - len(str(product)))
-                print(f"{" "*front_space}{product} -")
+                print(f"{' '*front_space}{product} -")
             else: 
-                print(f"{" "*front_space}{remainder + product}")
+                print(f"{' '*front_space}{remainder + product}")
                 if (len(str(remainder + product)) > len(str(product))): 
                     front_space += (len(str(remainder + product)) - len(str(product)))
-                print(f"{" "*front_space}{product} -")
+                print(f"{' '*front_space}{product} -")
             count += 1
             
-            print(f"{" "*(front_space)}{"-"*len(str(product))}")
+            print(f"{' '*(front_space)}{'-'*len(str(product))}")
                  
             if (len(str(remainder)) < len(str(product))): front_space += 1
             if (remainder == 0 and i != len(initial_str)-1): front_space += 1
@@ -44,6 +44,6 @@ def long_division(initial, divisor, frontlen):
         quotient += str(quotient_digit)
         
     print(f"{' '*front_space}{remainder}")    
-    print(f"{' '*front_space}{"="*(len(str(remainder)))}")       
+    print(f"{' '*front_space}{'='*(len(str(remainder)))}")       
     
 long_division(initial, divisor, frontlen)
