@@ -12,3 +12,8 @@ for row in bar_graph:
     i-=1
     
 print(f"{'-'*len(str(rows))}-{'-'*((len(digits)*2))}")
+
+data = [int(i) for i in range(len(digits))]
+if (len(str(rows)) == 2): print(f"|x|",end=" ")
+else: print(f"x|",end=" ")
+print(*data)
