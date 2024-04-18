@@ -10,9 +10,7 @@ islands = 0
 
 def markIslands(r: int, c: int):
     if r<0 or r>=rows or c<0 or c>=cols or grid[r][c] != "1": return
-    
     grid[r][c] = "0"
-    
     markIslands(r-1,c)
     markIslands(r+1,c)
     markIslands(r,c+1)
@@ -22,6 +20,5 @@ for i in range(rows):
     for j in range(cols):
         if grid[i][j] == "1":
             islands += 1
-            markIslands(i,j)
-                
+            markIslands(i,j)      
 print(islands)
