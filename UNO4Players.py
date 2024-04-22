@@ -9,7 +9,7 @@ p3 = sorted([i for i in str(input()).split(" ")], key=helper)
 p4 = sorted([i for i in str(input()).split(" ")], key=helper)
 players = [p1,p2,p3,p4]
 startCard = str(input())
-
+    
 def place(playerList: list, playerIndex: int, currFaceCard: str):
     currPlayer = playerList[playerIndex]
     
@@ -58,6 +58,5 @@ print(f"Current Card: {currCard}")
 print(f"Table hands:")
 for i in range(4):
     print(f"Player {i+1}: ", end='')
-    if len(players[i]) == 0: print("FINISH")
-    else: print(*players[i])
+    print(*players[i])
 print(f"------------------")
