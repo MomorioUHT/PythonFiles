@@ -59,16 +59,20 @@ for i in range(rows):
             
 path = solveMaze(maze, start, end)
 
+
 if path:
     for row, col in path:
         maze[row][col] = '*'
     maze[start[0]][start[1]] = 'A'
     maze[end[0]][end[1]] = 'B'
+    
+    print("-"*(cols*(2)+1))
     for row in maze:
         result = ''
         for i in range(cols):
             if i == cols-1: result += row[i]
             else: result += row[i] + " "
         print(f"|{result}|")
+    print("-"*(cols*(2)+1))
 else:
     print("No path found.")
