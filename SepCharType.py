@@ -9,5 +9,5 @@ if alpha != "":
     print("Alphabet(s):")
     print(alpha)
 if number != "": 
-    print("number(s):")
+    print("Number(s):")
     print(number)
